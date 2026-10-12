@@ -1,4 +1,4 @@
-/* --- Variables & Global Reset --- */
+ /* --- Variables & Global Reset --- */
 :root {
   --primary-red: #d90429;
   --accent-mustard: #ffb703;
@@ -289,12 +289,25 @@ body {
   padding: 12px 20px;
 }
 
+/* Empty notices */
+.empty-notice {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #9ca3af;
+  text-align: center;
+  padding: 14px 0;
+}
+
 /* --- 10 Things Numbered List --- */
 .numbered-list {
   padding-left: 24px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.numbered-list:empty {
+  padding-left: 0;
 }
 
 .numbered-list li {
@@ -316,7 +329,7 @@ body {
   font-weight: 700;
 }
 
-/* --- Dessert Stuck Quote & Wall --- */
+/* --- Desert Stuck Quote & Wall --- */
 .custom-prompt-quote {
   font-family: 'Shrikhand', cursive;
   font-size: 1.15rem;
